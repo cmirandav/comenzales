@@ -109,8 +109,8 @@ form {
   padding: 0;
   margin: 0;
 }
-=======
-﻿
+
+
 /*=============================================================
     Authour URL: www.designbootstrap.com
     
@@ -426,4 +426,8 @@ footer {
 .btn-google {
     background-color: #c32f10;
 }
->>>>>>> 8c76320b079b0486934d7da1c7de0ab7e33d661e
+
+.image {
+    width:160px;
+    height:130px;
+}
