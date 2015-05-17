@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"/>
-        <title> Perfil de local</title>
-        <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-        <link href="css/style.css" rel="stylesheet" type = "text/css" />
-        <link href="css/normalize.css" rel="stylesheet" type = "text/css" />
-        <link href="css/foundation.min.css" rel="stylesheet" type = "text/css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+            <link rel="stylesheet" href="css/nivo-slider.css" media="screen">
+            <link rel="stylesheet" href="css/futurico-theme.css" media="screen">
+        <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
         
-        </style>
-            
-        </style>-->
+        <title>::Comenzales.com - Perfil de local</title>
     </head>
+
     <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar-collapse collapse ">
+                            <ul id="menu-top" class="nav navbar-nav navbar-left">
+                                <a href="#">
+                                    <img src="img/logo_home.png"></img>
+                                </a>
+                            </ul>
+                            <ul id="menu-top" class="nav navbar-nav navbar-right">
+                                <li><a class="menu-top-active" href="index.html">Inicio</a></li>
+                                <li><a href="#">Cerrar sesion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <div class="container">
-            <header>
-                <nav>
-                    <ul>
-                        <h1>Comenzales.com</h1>
-                        <li>
-                            <a href="index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="#">Cerrar sesión</a>
-                        </li>
-            
-                    </ul>
-                </nav>
-            </header>
             <div class="main">
                 <div class="main-text">
                     <li class="logo">
@@ -36,35 +46,142 @@
                         </a>
                     </li>
                     <h1>RESTAURANTE</h1>
+
                     <h1>Dirección:</h1>
+                        <input type="text" name="direccion" value="Av. Jose Pardo 1295 - Miraflores"> <br>
                     <h1>Categoria:</h1>
+                        <input type="checkbox" name="option1" value="Criollo"> Criollo<br>
+                        <input type="checkbox" name="option2" value="Marino"> Marino<br>
+                        <input type="checkbox" name="option3" value="Chifa"> Chifa<br>
+                        <input type="checkbox" name="option3" value="Vegetariana"> Vegetariana<br>
+                        <input type="checkbox" name="option3" value="Pastas"> Pastas<br>
                     <h1>Reseña:</h1>
-    
-                    <h1>Entradas:</h1>
-                    <input type="radio" name="entradas" value="Entrada1"> Entrada1<br>
-                    <input type="radio" name="entradas" value="Entrada2"> Entrada2<br>
-                    <input type="radio" name="entradas" value="Entrada3"> Entrada3<br>
-                    <input type="radio" name="entradas" value="Entrada4"> Entrada4<br>
-                    <hr>
-                    <h1>Segundos:</h1>
-                    <input type="radio" name="segundos" value="Segundo1"> Segundo1<br>
-                    <input type="radio" name="segundos" value="Segundo2"> Segundo2<br>
-                    <input type="radio" name="segundos" value="Segundo3"> Segundo3<br>
-                    <input type="radio" name="segundos" value="Segundo4"> Segundo4<br>
-                    <hr>
-                    <h1>Refrescos:</h1>
-                    <input type="radio" name="refrescos" value="Refresco1"> Segundo1<br>
-                    <input type="radio" name="refrescos" value="Refresco2"> Segundo1<br>
-                    <input type="radio" name="refrescos" value="Refresco3"> Segundo1<br>
+                        <input type="text" name="resena" value=""> <br>
                     
-                    <li>
-                        <a href="#">Hoy quiero almorzar...</a>
-                    </li>
-                    <li>
-                        <a href="#">¿Preparas comidas? ¡Unetenos!</a>
-                    </li>
+
+                    
                 </div>
             </div>
+        </div>
+        <div class="container2">
+            <h1>Agregar Menu:</h1>
+            <input id="meeting" type="date" value="2011-01-13"/>
+                    
+            <h1>Entradas:</h1>
+            <table id="tt" class="easyui-datagrid" style="width:400px;height:auto;">
+                <thead>
+                    <tr>
+                        <th field="name1" width="50">Nombre</th>
+                        <th field="name2" width="50">Precio</th>
+                        <th field="name3" width="50"></th>
+                        <th field="name4" width="50"></th>
+                    </tr>                          
+                </thead>                           
+                <tbody>                            
+                    <tr>                           
+                        <td>Entrada1</td>            
+                        <td>S/. 4.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Entrada2</td>            
+                        <td>S/. 4.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Entrada3</td>            
+                        <td>S/. 4.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Entrada4</td>
+                        <td>S/. 4.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                </tbody>                           
+            </table>
+            <a href="#">Añadir Entrada</a>
+
+            <h1>Segundos:</h1>
+            <table id="tt" class="easyui-datagrid" style="width:400px;height:auto;">
+                <thead>
+                    <tr>
+                        <th field="name1" width="50">Nombre</th>
+                        <th field="name2" width="50">Precio</th>
+                        <th field="name3" width="50"></th>
+                        <th field="name4" width="50"></th>
+                    </tr>                          
+                </thead>                           
+                <tbody>                            
+                    <tr>                           
+                        <td>Segundo1</td>            
+                        <td>S/. 6.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Segundo2</td>            
+                        <td>S/. 6.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Segundo3</td>            
+                        <td>S/. 6.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Segundo4</td>            
+                        <td>S/. 6.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                </tbody>                           
+            </table>
+            <a href="#">Añadir Segundo</a>
+
+            <h1>Refrescos:</h1>
+            <table id="tt" class="refrescos" style="width:400px;height:auto;">
+                <thead>
+                    <tr>
+                        <th field="name1" width="50">Nombre</th>
+                        <th field="name2" width="50">Precio</th>
+                        <th field="name3" width="50"></th>
+                        <th field="name4" width="50"></th>
+                    </tr>                          
+                </thead>                           
+                <tbody>                            
+                    <tr>                           
+                        <td>Refresco1</td>            
+                        <td>S/. 2.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Refresco2</td>            
+                        <td>S/. 2.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                    <tr>                           
+                        <td>Refresco3</td>            
+                        <td>S/. 2.00</td>            
+                        <td><a href="#">Editar</a></td>            
+                        <td><a href="#">Quitar</a></td>            
+                    </tr>                          
+                </tbody>                           
+            </table>
+            <a href="#">Añadir Refresco</a>
+        </div>
+        <div class="container3">
+            <br><input type="submit" value="Pedidos del Dia"><br>
+            <br><input type="submit" value="Historial de Menus"><br>
+            <br><input type="submit" value="Cerrar recepcion de pedidos"><br>
         </div>
     </body>
 </html>
