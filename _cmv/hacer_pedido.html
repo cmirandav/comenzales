@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title> Perfil de local</title>
+        <title> Hacer pedido</title>
         <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" type = "text/css" />
         <link href="css/normalize.css" rel="stylesheet" type = "text/css" />
@@ -22,6 +22,9 @@
                             <a href="index.html">INICIO</a>
                         </li>
                         <li>
+                            <a href="#">Añadir al Carrito</a>
+                        </li>
+                        <li>
                             <a href="#">Cerrar sesión</a>
                         </li>
             
@@ -30,7 +33,7 @@
             </header>
             <div class="main">
                 <div class="main-text">
-                    <li class="logo">
+                    <li class="mapa">
                         <a href="#">
                         <img src="img/mapita.png"></img>
                         </a>
@@ -41,27 +44,43 @@
                     <h1>Reseña:</h1>
     
                     <h1>Entradas:</h1>
-                    <input type="radio" name="entradas" value="Entrada1"> Entrada1<br>
+                    <input type="radio" name="entradas" value="Entrada1" checked> Entrada1<br>
                     <input type="radio" name="entradas" value="Entrada2"> Entrada2<br>
                     <input type="radio" name="entradas" value="Entrada3"> Entrada3<br>
                     <input type="radio" name="entradas" value="Entrada4"> Entrada4<br>
                     <hr>
                     <h1>Segundos:</h1>
-                    <input type="radio" name="segundos" value="Segundo1"> Segundo1<br>
+                    <input type="radio" name="segundos" value="Segundo1"checked> Segundo1<br>
                     <input type="radio" name="segundos" value="Segundo2"> Segundo2<br>
                     <input type="radio" name="segundos" value="Segundo3"> Segundo3<br>
                     <input type="radio" name="segundos" value="Segundo4"> Segundo4<br>
                     <hr>
                     <h1>Refrescos:</h1>
-                    <input type="radio" name="refrescos" value="Refresco1"> Segundo1<br>
+                    <input type="radio" name="refrescos" value="Refresco1"checked> Segundo1<br>
                     <input type="radio" name="refrescos" value="Refresco2"> Segundo1<br>
                     <input type="radio" name="refrescos" value="Refresco3"> Segundo1<br>
                     
-                    <li>
-                        <a href="#">Hoy quiero almorzar...</a>
-                    </li>
-                    <li>
-                        <a href="#">¿Preparas comidas? ¡Unetenos!</a>
+                    
+                    <h1>¿A que hora almuerzas?</h1>
+                    <select name="horaalmuerzo">
+                    <option value="12:00 pm">12:00pm</option>
+                    <option value="12:30 pm">12:30pm</option>
+                    <option value="01:00 pm">01:00pm</option>
+                    <option value="01:30 pm">01:30pm</option>
+                    </select>
+                    
+                    
+                    <h1>Tu Pedido:</h1>
+                    <INPUT TYPE="NUMBER" MIN="1" MAX="10" STEP="1" VALUE="1" SIZE="6">
+                        
+                    <h1>S/.</h1>
+                    
+                    <br><input type="submit" value="Agregar al carrito"><br>
+                    
+                    <li class="platos">
+                        <a href="#">
+                        <img src="img/chifas.png"></img>
+                        </a>
                     </li>
                 </div>
             </div>
